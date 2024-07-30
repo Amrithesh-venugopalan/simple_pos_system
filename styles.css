@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+input,
+button {
+  font-family: inherit;
+}
+
+.main-container {
+  padding: 50px 24px;
+  width: 70vw;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #b3ffff;
+  border-radius: 10px;
+}
+
+.main-btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.main-btn {
+  border: none;
+  padding: 16px 32px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: inherit;
+  background-color: #003333;
+  color: #e6ffff;
+}
+.new-product-container {
+  margin-top: 60px;
+}
+.product-inputs {
+  display: flex;
+  gap: 16px;
+}
+.allproduct-container,
+.allcustomer-container,
+.allorder-container {
+  display: flex;
+  height: 40vh;
+  justify-content: start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  overflow-y: scroll;
+}
+.allorder-container {
+  width: 980px;
+}
+.allcustomer-container {
+  width: 100%;
+}
+.added-customer {
+  display: flex;
+  gap: 10px;
+}
+.sl-no-customer-col {
+  width: 15%;
+}
+.customer-col {
+  width: 60%;
+}
+.customer-id-col {
+  width: 33%;
+}
+.product .allorder-container {
+  padding: 10px;
+}
+.added-product {
+  display: flex;
+  gap: 10px;
+}
+.product-edit-btn,
+.product-delete-btn {
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+}
+.product-edit-btn {
+  background-color: #2b75ae;
+}
+.product-delete-btn {
+  background-color: #e6514d;
+}
+.sl-no-product-col {
+  width: 10%;
+}
+.product-col {
+  width: 55%;
+}
+.product-id-col {
+  width: 20%;
+}
+.price-col {
+  width: 15%;
+}
+
+.product-name,
+.product-price,
+.customer-name {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+.price-symbol {
+  margin-left: 40px;
+  font-size: 28px;
+}
+.add-product-btn,
+.add-customer-btn,
+.confirm-order-btn,
+.generate-invoice-btn {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: inherit;
+  background-color: #525ceb;
+  color: #e6ffff;
+}
+.generate-invoice-btn {
+  background-color: #0d9276;
+  color: #e6ffff;
+}
+.product {
+  font-size: 16px;
+}
+.customer-edit-btn,
+.customer-delete-btn {
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+}
+.customer-edit-btn {
+  background-color: #2b75ae;
+}
+.customer-delete-btn {
+  background-color: #e6514d;
+}
+.new-customer-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.customer-inputs {
+  display: flex;
+  gap: 16px;
+}
+.customer-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customer-icon {
+  font-size: 48px;
+  color: #aaa;
+}
+.customer-icon-name {
+  color: #aaa;
+}
+.active .customer-icon {
+  color: blue;
+}
+.active .customer-icon-name {
+  color: blue;
+}
+.create-order-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.order-options {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+}
+.quantity-icon {
+  font-size: 30px;
+}
+#products,
+#customers {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+}
+.total-price-container {
+  display: flex;
+  background-color: white;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100px;
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.invoice-details {
+  width: 980px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.delete-icon {
+  font-size: 18px;
+}
+.hide {
+  display: none;
+}
+.col-head {
+  font-weight: 600;
+}
+.slno-order-col {
+  width: 10%;
+}
+.description-col {
+  width: 15%;
+}
+.purchaser-col {
+  width: 15%;
+}
+.order-id-col {
+  width: 10%;
+}
+.quantity-col {
+  width: 15%;
+}
+.rate-col {
+  width: 10%;
+}
+.amount-col {
+  width: 5%;
+}
+.order-btns {
+  width: 10%;
+}
+.order-edit-btn,
+.order-delete-btn {
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+}
+.order-edit-btn {
+  background-color: #2b75ae;
+}
+.order-delete-btn {
+  background-color: #e6514d;
+}
+.invoice-title {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.total-amount-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 82%;
+}
+.invoice-slno-order-col {
+  width: 15%;
+}
+.invoice-description-col {
+  width: 30%;
+}
+.invoice-quantity-col {
+  width: 15%;
+}
+.invoice-rate-col {
+  width: 15%;
+}
+.invoice-amount-col {
+  width: 7%;
+}
+.invoice-head {
+  margin-bottom: 20px;
+}

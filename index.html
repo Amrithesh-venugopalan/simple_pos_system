@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS system</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <div class="modal">This is a message.</div> -->
+    <div class="main-container">
+      <div class="main-btn-box">
+        <button class="main-btn add-new-product-btn">Add New Product</button>
+        <button class="main-btn add-new-customer-btn">Add New Customer</button>
+        <button class="main-btn create-order-btn">Create New Order</button>
+      </div>
+
+      <div class="new-product-container">
+        <div class="product-inputs">
+          <input type="text" class="product-name" placeholder="Product Name" />
+          <label for="product-price" class="price-symbol">₹</label>
+          <input
+            type="text"
+            class="product-price"
+            placeholder="Product Price"
+          />
+          <button class="add-product-btn">Add Product</button>
+        </div>
+        <div class="allproduct-container">
+          <div class="added-product">
+            <span class="sl-no-product-col">Sl no</span>
+            <span class="product-col">Product</span>
+            <span class="product-id-col">Product Id</span>
+            <span class="price-col">Price</span>
+            <div class="product-btn-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="new-customer-container hide">
+        <div class="customer-inputs">
+          <input
+            type="text"
+            class="customer-name"
+            placeholder="Customer Name"
+          />
+          <button class="add-customer-btn">Add Customer</button>
+        </div>
+        <div class="allcustomer-container">
+          <div class="added-customer">
+            <span class="sl-no-customer-col">Sl no</span>
+            <span class="customer-col">Customer</span>
+            <span class="customer-id-col">Customer Id</span>
+            <div class="customer-btn-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="create-order-container hide">
+        <div class="order-options">
+          <select name="customers" id="customers">
+            <option value="" class="customer" selected hidden>
+              Choose a customer
+            </option>
+          </select>
+          <select name="products" id="products">
+            <option value="" class="product" selected hidden>
+              Choose an item
+            </option>
+          </select>
+          <div class="quantity">
+            <ion-icon
+              name="remove-circle"
+              class="quantity-icon quantity-icon-subtract"
+            ></ion-icon>
+            <span class="current-quantity">1</span>
+            <ion-icon
+              name="add-circle"
+              class="quantity-icon quantity-icon-add"
+            ></ion-icon>
+          </div>
+          <div class="total-price-container">
+            <span>₹</span>
+            <p class="total-price">0</p>
+          </div>
+          <button class="confirm-order-btn">Confirm Order</button>
+          <button class="generate-invoice-btn">Generate Invoice</button>
+        </div>
+        <div class="allorder-container">
+          <div class="order">
+            <span class="slno-order-col">Sl no</span>
+            <span class="description-col">Description</span>
+            <span class="order-id-col">Order Id</span>
+            <span class="quantity-col">Quantity</span>
+            <span class="rate-col">Rate</span>
+            <span class="amount-col">Amount</span>
+            <div class="order-btns">
+              <!-- <button>edit</button>
+                <button>delete</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="invoice-details"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
